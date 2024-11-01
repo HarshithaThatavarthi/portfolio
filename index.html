@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
+        <div class="nav-brand">
+            <a href="#"><h1>Harshitha Thatavarthi</h1></a>
+        </div>
       <ul>
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -19,78 +21,130 @@
     </nav>
   </header>
 
-  <section id="home">
-    <p><h1><b>Hi, I'm <br>Harshitha Thatavarthi,</b></h1>
-      Student at RISE Krishna Sai 
-      Prakasam Group Of Institutions,<br> a Software Developer.</p>
+  <section id="home" class="section">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Harshitha Thatavarthi</span></h1>
+      <p>Frontend Developer | Aspiring Software Engineer</p>
+    </div>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p class="p">
-      <li>Name : Harshitha Thatavarthi</li>
-      <li>Age : 19</li>
-      <li>Year of Study : 3rd Btech</li>
-      <li>Languages & skills : C, C++, Python</li>
-    </p>
-    <h3>Educational Qualifications</h3>
-    <p><h4>RISE Krishna Sai 
-      Prakasam Group Of Institutions</h4>
-      <span>Computer Science and Engineering</span><br>
-      <span>Valluru, Ongole</span>
-    </p>
-    <p><h4>Narayana Junior College</h4>
-    <span> MPC</span><br>
-    <span> Kandukur</span>
-    </p>
-    <p><h4>Ravindra Bharathi School</h4>
-      <span>SSC</span><br>
-      <span>Kandukur</span>
-     </p>
-  </section>
+    <div class="about-container">
+        <div class="about-content">
+            <p>
+                I'm a passionate Frontend Developer with a keen interest in creating beautiful and functional web experiences. Currently pursuing my Bachelor's in Technology (BTech) in Computer Science, I love exploring new technologies and pushing the boundaries of what’s possible in web development.
+            </p>
 
-  <section id="certifications">
+            <h3 class="sub-header">Personal Information</h3>
+            <ul>
+                <li><strong>DOB:</strong> 25-10-2004</li>
+                <li><strong>Location:</strong> Kandukur, Andhra Pradesh</li>
+                <li><strong>Email:</strong> <a href="mailto:harshithat2021@gmail.com">harshithat2021@gmail.com</a></li>
+            </ul>
+
+            <h3 class="sub-header">Educational Qualifications</h3>
+            <div class="education-container">
+                <div class="education-item">
+                    <h4>RISE Krishna Sai Prakasam Group Of Institutions</h4>
+                    <p><strong>Course:</strong> BTech in Computer Science and Engineering</p>
+                    <p><strong>Years:</strong> 2021 - Present</p>
+                    <p><strong>Percentage:</strong> 83%</p>
+                </div>
+                <div class="education-item">
+                    <h4>Narayana Junior College</h4>
+                    <p><strong>Course:</strong> MPC (Mathematics, Physics, Chemistry)</p>
+                    <p><strong>Years:</strong> 2019 - 2021</p>
+                    <p><strong>Percentage:</strong> 96%</p>
+                </div>
+                <div class="education-item">
+                    <h4>Ravindra Bharathi School</h4>
+                    <p><strong>Course:</strong> Secondary School Certificate</p>
+                    <p><strong>Years:</strong> 2018 - 2019</p>
+                    <p><strong>Percentage:</strong> 98%</p>
+                </div>
+            </div>
+
+
+            <h3 class="sub-header">Hobbies & Interests</h3>
+            <p>
+                In my free time, Beyond coding, I’m a movie enthusiast who loves getting immersed in different stories and genres. Dance and music bring energy and creativity to my life, and I enjoy exploring new rhythms and tunes.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+  <section id="certifications" class="section">
     <h2>Certifications</h2>
-    <div class="project">
-      <a href="https://drive.google.com/file/d/1pGFG2qF9WorRxOt7VmZLoy_F1qGRuzZ3/view?usp=sharing"><h3>Introduction to Internet of Things</h3></a>
-      <span>Issued by Swayam-NPTEL</span>
-    </div>
-    <div class="project">
-      <a href="https://drive.google.com/file/d/1rAEGQANlTiMdLaOV9LZzFOzxEUyPm_PN/view?usp=sharing" target="_blank"><h3>JavaScript</h3></a>
-      <span>Issued by Scaler</span>
-    </div>
-    <div class="project">
-      <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/4966439/original/THATAVARTHI_HARSHITHA20240707-72-r2nqj8.jpg" target="_blank"><h3>Front End Development-HTML</h3></a>
-      <span>Issued by Great Learning</span>
-    </div>
-    <div class="project">
-      <a href="https://drive.google.com/file/d/1rMctQGnQxKVlHrkZhpAp8zsnTBex2XNX/view?usp=sharing" target="_blank"><h3>Introduction to Programming using Python</h3></a>
-      <span>Issued by Edx</span>
+    <div class="certifications-list">
+      <div class="cert">
+        <a href="https://drive.google.com/file/d/1pGFG2qF9WorRxOt7VmZLoy_F1qGRuzZ3/view?usp=sharing" target="_blank">Introduction to Internet of Things</a>
+        <p>Issued by Swayam-NPTEL</p>
+      </div>
+      <div class="cert">
+        <a href="https://drive.google.com/file/d/1rAEGQANlTiMdLaOV9LZzFOzxEUyPm_PN/view?usp=sharing" target="_blank">JavaScript</a>
+        <p>Issued by Scaler</p>
+      </div>
+      <div class="cert">
+        <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/4966439/original/THATAVARTHI_HARSHITHA20240707-72-r2nqj8.jpg" target="_blank">Front End Development - HTML</a>
+        <p>Issued by Great Learning</p>
+      </div>
+      <div class="cert">
+        <a href="https://drive.google.com/file/d/1rMctQGnQxKVlHrkZhpAp8zsnTBex2XNX/view?usp=sharing" target="_blank">Introduction to Programming using Python</a>
+        <p>Issued by Edx</p>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>My Projects</h2>
-    <div class="project">
-      <a href="https://harshithathatavarthi.github.io/foodie/" target="_blank"><h3>Foodie</h3></a>
-      <span>A responsive frontend UI showcasing the business's offerings and engaging food items.</span><br>
-      <span> <b>Technologies Used:</b> HTML, CSS</span>
-    </div>
-    <div class="project">
-      <a href="https://harshithathatavarthi.github.io/weatherapp/" target="_blank"><h3>Weather App</h3></a>
-      <span>Website which provides real-time weather information based on user-inputted locations. Integrated Accu weather APIs to get real-time data.</span><br>
-      <span> <b>Technologies Used:</b> HTML, CSS, JavaScript</span>
-      <p></p>
+    <div class="project-list">
+      <div class="project">
+        <a href="https://harshithathatavarthi.github.io/foodie/" target="_blank">Foodie</a>
+        <p>A responsive frontend UI for a food business showcasing offerings and engaging food items.</p>
+        <p class="tech-stack"><b>Technologies Used:</b> HTML, CSS</p>
+      </div>
+      <div class="project">
+        <a href="https://harshithathatavarthi.github.io/weatherapp/" target="_blank">Weather App</a>
+        <p>Real-time weather information website using AccuWeather APIs based on user input.</p>
+        <p class="tech-stack"><b>Technologies Used:</b> HTML, CSS, JavaScript</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact Me</h2>
-    <p>You can reach me at: <a href="mailto:harshithat2021@gmail.com">harshithat2021@gmail.com</a></p>
-  </section>
+    <div class="contact-container">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/harshitha-thatavarthi-b36789317/" target="_blank">
+                <ion-icon name="logo-linkedin" class="logos"></ion-icon>
+            </a>
+            <a href="https://github.com/HarshithaThatavarthi" target="_blank">     
+                <ion-icon name="logo-github" class="logos"></ion-icon>
+            </a>
+            <a href="mailto:harshithat2021@gmail.com" target="_blank">     
+                <ion-icon name="mail-outline" class="logos"></ion-icon>
+            </a>
+        </div>
+        <h3 class="contact-header">Get in Touch</h3>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
 
   <footer>
-    &copy; 2024 Harshitha. All rights are reserved.
+    &copy; 2024 Harshitha Thatavarthi. All rights reserved.
   </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
